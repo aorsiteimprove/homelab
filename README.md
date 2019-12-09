@@ -13,3 +13,12 @@ https://linuxconfig.org/howto-mount-usb-drive-in-linux
 
 `UUID=30E2ED3EE2ED0944 /media/elements ntfs    defaults          0       0`
 
+## install docker and docker-compose
+https://docs.docker.com/install/linux/docker-ce/debian/#install-using-the-convenience-script
+
+`curl -fsSL https://get.docker.com -o get-docker.sh`
+`sudo sh get-docker.sh`
+
+`sudo usermod -aG docker andrius`
+
+`docker run hello-world`
