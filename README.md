@@ -22,4 +22,6 @@ https://docs.docker.com/install/linux/docker-ce/debian/#install-using-the-conven
 
 `sudo usermod -aG docker andrius`
 
+`reboot`
+
 `docker run hello-world`
