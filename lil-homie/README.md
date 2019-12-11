@@ -30,3 +30,16 @@ https://docs.docker.com/install/linux/docker-ce/debian/#install-using-the-conven
 `reboot`
 
 `docker run hello-world`
+
+## install docker-compose
+https://dev.to/rohansawant/installing-docker-and-docker-compose-on-the-raspberry-pi-in-5-simple-steps-3mgl
+
+`sudo apt-get install libffi-dev libssl-dev`
+
+`sudo apt-get install -y python python-pip`
+
+`sudo apt-get remove python-configparser`
+
+`sudo pip install docker-compose`
+
+
