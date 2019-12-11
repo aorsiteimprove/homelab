@@ -1,5 +1,10 @@
 # homelab
 
+## initial
+`apt-get update`
+
+`apt-get install git`
+
 ## setting up external drive
 https://linuxconfig.org/howto-mount-usb-drive-in-linux
 
