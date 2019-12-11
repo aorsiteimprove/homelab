@@ -42,4 +42,6 @@ https://dev.to/rohansawant/installing-docker-and-docker-compose-on-the-raspberry
 
 `sudo pip install docker-compose`
 
+## todo
 
+netdata enable lm-sensors and graph cpu temp
