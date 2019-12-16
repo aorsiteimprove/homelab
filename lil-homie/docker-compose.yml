@@ -16,10 +16,6 @@ services:
       - /sys:/host/sys:ro
   samba:
     container_name: samba
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Europe/Copenhagen
     restart: unless-stopped
     image: dperson/samba
     network_mode: host
@@ -30,8 +26,8 @@ services:
       -w MYLAN
       -s elements;/elements;yes;no;yes;all;all;none;;comment1
     environment:
-      - "USERID=${PUID}"
-      - "GROUPID=${PGID}"
-      - "TZ=${TZ}"
+      - "USERID=1000"
+      - "GROUPID=1000"
+      - "TZ=Europe/Copenhagen"
       - "NMBD=True"
       - "RECYCLE=False"
