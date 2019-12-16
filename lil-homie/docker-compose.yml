@@ -14,3 +14,21 @@ services:
       - /etc/group:/host/etc/group:ro
       - /proc:/host/proc:ro
       - /sys:/host/sys:ro
+  samba:
+    #container_name: samba
+    restart: unless-stopped
+    image: dperson/samba
+    network_mode: host
+    #hostname: my-samba
+    volumes:
+      - "/media/elements:/elements"
+    command: >
+      -w MYLAN
+      -s elements;/elements;yes;no;yes;all;all;none;;comment1
+      -s movies;/movies;yes;no;no;admin;all;none;;comment1
+    environment:
+      - "USERID=${PUID}"
+      - "GROUPID=${PGID}"
+      - "TZ=${TZ}"
+      - "NMBD=True"
+      - "RECYCLE=False"
