@@ -18,7 +18,7 @@ services:
   samba:
     container_name: samba
     restart: unless-stopped
-    image: dperson/samba
+    image: dperson/samba:rpi
     network_mode: host
     hostname: lilhomie_smb
     volumes:
