@@ -27,8 +27,8 @@ services:
       #-w MYLAN
       #-s elements;/elements;yes;no;yes;all;all;none;;comment1
     environment:
-      - "USERID=1000"
-      - "GROUPID=1000"
+      - "USERID=1001"
+      - "GROUPID=1001"
       - "TZ=Europe/Copenhagen"
       - "NMBD=True"
       - "RECYCLE=False"
