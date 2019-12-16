@@ -29,7 +29,6 @@ services:
     command: >
       -w MYLAN
       -s elements;/elements;yes;no;yes;all;all;none;;comment1
-      -s movies;/movies;yes;no;no;admin;all;none;;comment1
     environment:
       - "USERID=${PUID}"
       - "GROUPID=${PGID}"
