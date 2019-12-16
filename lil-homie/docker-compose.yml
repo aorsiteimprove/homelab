@@ -23,9 +23,9 @@ services:
     hostname: lilhomie_smb
     volumes:
       - "/media/elements:/elements"
-    command: >
-      -w MYLAN
-      -s elements;/elements;yes;no;yes;all;all;none;;comment1
+    command: "-s \"elements;/elements;yes;no;yes;all;none;;elements\""
+      #-w MYLAN
+      #-s elements;/elements;yes;no;yes;all;all;none;;comment1
     environment:
       - "USERID=1000"
       - "GROUPID=1000"
