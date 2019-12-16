@@ -19,7 +19,11 @@ services:
     restart: unless-stopped
     image: dperson/samba
     network_mode: host
-    #hostname: my-samba
+    hostname: lilhomie_smb
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Copenhagen
     volumes:
       - "/media/elements:/elements"
     command: >
