@@ -15,15 +15,15 @@ services:
       - /proc:/host/proc:ro
       - /sys:/host/sys:ro
   samba:
-    #container_name: samba
-    restart: unless-stopped
-    image: dperson/samba
-    network_mode: host
-    hostname: lilhomie_smb
+    container_name: samba
     environment:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Copenhagen
+    restart: unless-stopped
+    image: dperson/samba
+    network_mode: host
+    hostname: lilhomie_smb
     volumes:
       - "/media/elements:/elements"
     command: >
