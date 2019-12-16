@@ -3,6 +3,7 @@ services:
   netdata:
     container_name: netdata
     image: netdata/netdata
+    restart: unless-stopped
     #hostname: example.com # set to fqdn of host
     ports:
       - 19999:19999
