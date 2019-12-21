@@ -32,6 +32,7 @@ services:
       - "NMBD=True"
       - "RECYCLE=False"
   openvpn:
+    container_name: openvpn
     cap_add:
      - NET_ADMIN
     image: giggio/openvpn-arm
