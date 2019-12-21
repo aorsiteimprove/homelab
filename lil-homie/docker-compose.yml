@@ -31,12 +31,12 @@ services:
       - "TZ=Europe/Copenhagen"
       - "NMBD=True"
       - "RECYCLE=False"
-    openvpn:
-      cap_add:
-       - NET_ADMIN
-      image: giggio/openvpn-arm
-      ports:
-       - "1194:1194/udp"
-      restart: always
-      volumes:
-       - ./openvpn/conf:/etc/openvpn
+  openvpn:
+    cap_add:
+     - NET_ADMIN
+    image: giggio/openvpn-arm
+    ports:
+     - "1194:1194/udp"
+    restart: always
+    volumes:
+     - ./openvpn/conf:/etc/openvpn
