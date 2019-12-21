@@ -44,7 +44,7 @@ services:
       - TZ=Europe/London
       - INTERFACE=eth0 #optional
     volumes:
-      - path to data:/config
+      - /media/elements/openvpn/:/config
     ports:
       - 943:943
       - 9443:9443
